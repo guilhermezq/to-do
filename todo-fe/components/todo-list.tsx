@@ -15,7 +15,7 @@ export const ToDoList = (props: {
     <Table size="xl">
       <tbody>
         {toDoList.map((toDo) => (
-          <tr>
+          <tr key={toDo.id}>
             <td>
               <Form.Check
                 type="checkbox"
